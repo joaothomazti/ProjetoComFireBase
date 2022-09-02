@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ProjectLogin</string>
+    <string name="text_cadastro">Cadastrar-se</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_senha">Senha</string>
+    <string name="btt_cadastrar">Cadastrar</string>
+    <string name="text_logar">Logar</string>
+    <string name="btt_entrar">Entrar</string>
+    <string name="btt_login_cadastro">Não tem conta ? Cadastre-se</string>
+    <string name="btt_cadastro_voltar">Já tem conta ? Clique aqui para Logar</string>
+
+
+</resources>
