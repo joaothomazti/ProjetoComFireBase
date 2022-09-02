@@ -27,7 +27,6 @@ class FormCadastro : AppCompatActivity() {
             val intent = Intent(this, FormLogin::class.java)
             startActivity(intent)
         }
-
         binding.bttCadastrar.setOnClickListener {
             val email = binding.inputTextEmail.text.toString()
             val senha = binding.inputTextSenha.text.toString()
@@ -44,12 +43,11 @@ class FormCadastro : AppCompatActivity() {
         email: String,
         senha: String,
     ) {
-        auth.createUserWithEmailAndPassword(email, senha).addOnCompleteListener(this) { task ->
-            if (task.isSuccessful){
+        auth.createUserWithEmailAndPassword(email, senha).addOnCompleteListener(this) { cadastro ->
+            if (cadastro.isSuccessful){
                 Toast.makeText(this, "Conta Criada com sucesso", Toast.LENGTH_SHORT).show()
                 binding.inputTextEmail.setText("")
                 binding.inputTextSenha.setText("")
-
             }
         }.addOnFailureListener {errors ->
             val msgErro = when(errors){
