@@ -95,6 +95,7 @@
         style="@style/Widget.MaterialComponents.Button.TextButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/btt_cadastrar"
         android:layout_marginTop="70sp"
         />
